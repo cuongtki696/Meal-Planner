@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Navigation Bar -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="#FF6200EE">
+
+        <Button
+            android:id="@+id/button_page1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:textColor="#FFFFFF"
+            android:background="#FF3700B3" />
+
+        <Button
+            android:id="@+id/button_page2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Storage"
+            android:textColor="#FFFFFF"
+            android:background="#FF3700B3" />
+
+        <Button
+            android:id="@+id/button_page3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Shopping"
+            android:textColor="#FFFFFF"
+            android:background="#FF3700B3" />
+    </LinearLayout>
+
+    <!-- Body (Empty) -->
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="254dp"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <FrameLayout
+        android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF">
+        <!-- Content can be dynamically added here -->
+    </FrameLayout>
+
+    <!-- Footer -->
+    <TextView
+        android:id="@+id/footer_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:background="#FFBB86FC" />
+
+</LinearLayout>
