@@ -1,46 +1,41 @@
 package com.example.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
-import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
-import com.example.myapplication.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
 
-    // Load native library
-    static {
-        System.loadLibrary("native-lib");
-    }
-
-    // Native method to get the current date
-    public native String getCurrentDate();
+    private DatabaseHelper dbHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Initialize UI components
-        Button buttonPage1 = findViewById(R.id.button_page1);
-        Button buttonPage2 = findViewById(R.id.button_page2);
-        Button buttonPage3 = findViewById(R.id.button_page3);
-        TextView footerDate = findViewById(R.id.footer_date);
+        dbHelper = new DatabaseHelper(this); // Initialize the database
 
-        // Set footer date using native method
-        footerDate.setText(getCurrentDate());
+        // Set up button navigation
+        Button buttonHome = findViewById(R.id.button_home);
+        Button buttonStorage = findViewById(R.id.button_storage);
+        Button buttonShoppingList = findViewById(R.id.button_shopping_list);
 
-        // Add listeners for buttons (Example: just showing a toast message)
-        buttonPage1.setOnClickListener(v -> {
-            // Handle Page 1 button click
+        buttonHome.setOnClickListener(v -> {
+            // Show home content
+            setContentView(R.layout.activity_main);
         });
 
-        buttonPage2.setOnClickListener(v -> {
-            // Handle Page 2 button click
+        buttonStorage.setOnClickListener(v -> {
+            // Navigate to StorageActivity
+            Intent intent = new Intent(MainActivity.this, StorageActivity.class);
+            startActivity(intent);
         });
 
-        buttonPage3.setOnClickListener(v -> {
-            // Handle Page 3 button click
+        buttonShoppingList.setOnClickListener(v -> {
+            // Navigate to ShoppingListActivity
+            Intent intent = new Intent(MainActivity.this, ShoppingListActivity.class);
+            startActivity(intent);
         });
     }
 }

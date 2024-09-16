@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:id="@+id/main_container">
+    android:padding="16dp">
 
     <!-- Navigation Bar -->
     <LinearLayout
@@ -44,12 +44,21 @@
             android:background="#FF3700B3" />
     </LinearLayout>
 
-    <!-- Placeholder for Home Content -->
+    <!-- TextView for the "Shopping List Empty" message (You can modify this) -->
     <TextView
-        android:id="@+id/home_content"
+        android:id="@+id/shopping_list_empty_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shopping List Empty"
+        android:textSize="18sp"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:padding="16dp" />
+
+    <!-- RecyclerView for displaying the shopping list -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/shopping_list_recycler_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Welcome to the Meal Planner App!"
-        android:textSize="20sp"
-        android:gravity="center" />
+        android:layout_height="match_parent" />
+
 </LinearLayout>
