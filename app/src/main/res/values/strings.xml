@@ -1,3 +1,20 @@
 <resources>
-    <string name="app_name">Practice</string>
+    <string name="app_name">Meal Planner</string>
+    <string name="select_category">Select Category</string>
+    <string name="select_allergy">Select Allergy</string>
+
+    <string-array name="category_array">
+        <item>All</item>
+        <item>Bugget</item>
+        <item>Vegan</item>
+        <item>Vegetarian</item>
+        <item>Low Carb</item>
+        <item>Protein Rich</item>
+
+    </string-array>
+    <string name="recipe_name">Recipe Name</string>
+    <string name="ingredients">Ingredients:</string>
+    <string name="nutrient_values">Nutrient Values:</string>
+    <string name="instructions">Instructions:</string>
+
 </resources>

@@ -45,11 +45,52 @@
     </LinearLayout>
 
     <!-- Placeholder for Home Content -->
-    <TextView
-        android:id="@+id/home_content"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Welcome to the Meal Planner App!"
-        android:textSize="20sp"
-        android:gravity="center" />
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <Spinner
+            android:id="@+id/spinner_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:prompt="@string/select_category" />
+
+        <Spinner
+            android:id="@+id/spinner_allergy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:prompt="@string/select_allergy" />
+
+        <Button
+            android:id="@+id/button_apply_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apply Filter"
+            android:layout_marginStart="20dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Not enough ingredients for any dish."
+        android:visibility="gone"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+
 </LinearLayout>

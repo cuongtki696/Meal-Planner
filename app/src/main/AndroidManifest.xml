@@ -29,8 +29,14 @@
         <!-- Register ShoppingListActivity -->
         <activity android:name=".ShoppingListActivity"></activity>
 
-        <!-- Register ShoppingListActivity -->
+        <!-- Register AddIngredientActivity" -->
         <activity android:name=".AddIngredientActivity"></activity>
+
+        <!-- Register AddShoppingListItemActivity -->
+        <activity android:name="AddShoppingListItemActivity" />
+
+        <!-- Register RecipeDetailActivity -->
+        <activity android:name=".RecipeDetailActivity" />
 
     </application>
 

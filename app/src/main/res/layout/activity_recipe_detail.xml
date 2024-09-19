@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Recipe Name -->
+    <TextView
+        android:id="@+id/recipe_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/recipe_name"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:paddingBottom="8dp" />
+
+    <!-- Ingredients Label -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingredients:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:paddingTop="16dp" />
+
+    <!-- Ingredients List -->
+    <TextView
+        android:id="@+id/ingredient_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="List of ingredients will appear here"
+        android:textSize="14sp"
+        android:paddingBottom="16dp" />
+
+    <!-- Nutrient Values Label -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nutrient Values:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:paddingTop="16dp" />
+
+    <!-- Nutrient Value List -->
+    <TextView
+        android:id="@+id/nutrient_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nutrient values will appear here"
+        android:textSize="14sp"
+        android:paddingBottom="16dp" />
+
+    <!-- Instructions Label -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Instructions:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:paddingTop="16dp" />
+
+    <!-- Instructions Text -->
+    <TextView
+        android:id="@+id/instructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cooking instructions will appear here"
+        android:textSize="14sp"
+        android:paddingBottom="16dp" />
+
+</LinearLayout>

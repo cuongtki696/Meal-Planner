@@ -1,17 +1,16 @@
 package com.example.myapplication;
 
-public class Ingredient {
+public class ShoppingItem {
     private final String name;
     private final int quantity;
     private final String unit;
-    private final String usedByDate;
+
 
     // Constructor
-    public Ingredient(String name, int quantity, String unit, String usedByDate) {
+    public ShoppingItem(String name, int quantity, String unit) {
         this.name = name;
         this.quantity = quantity;
         this.unit = unit;
-        this.usedByDate = usedByDate;
     }
 
     // Getters
@@ -27,12 +26,4 @@ public class Ingredient {
         return unit;
     }
 
-    public String getUsedByDate() {
-        return usedByDate;
-    }
-
-    @Override
-    public String toString() {
-        return name;
-    }
 }

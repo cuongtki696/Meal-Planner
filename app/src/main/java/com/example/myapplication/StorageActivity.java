@@ -9,7 +9,6 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 import android.util.SparseBooleanArray;
-import android.util.Log;
 
 public class StorageActivity extends AppCompatActivity {
 
@@ -32,8 +31,6 @@ public class StorageActivity extends AppCompatActivity {
 
         // Get ingredients from the database
         ingredientList = dbHelper.getAllIngredients();
-        Log.d("StorageActivity", "Number of ingredients: " + (ingredientList != null ? ingredientList.size() : "null"));
-
         if (ingredientList == null || ingredientList.isEmpty()) {
             storageEmptyMessage.setVisibility(View.VISIBLE);
             recyclerView.setVisibility(View.GONE);
