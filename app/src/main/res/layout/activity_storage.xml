@@ -90,4 +90,15 @@
         android:layout_gravity="bottom|start"
         android:layout_margin="16dp" />
 
+    <Button
+        android:id="@+id/button_remove_selected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remove Selected"
+        android:backgroundTint="#FF3700B3"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="bottom|start"
+        android:layout_margin="16dp"
+        android:visibility="gone" />
+
 </FrameLayout>

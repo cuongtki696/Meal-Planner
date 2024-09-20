@@ -46,6 +46,7 @@ public class StorageActivity extends AppCompatActivity {
         Button shoppingListButton = findViewById(R.id.button_shopping_list);
         Button removeButton = findViewById(R.id.button_remove);
         Button updateButton = findViewById(R.id.button_update);
+        Button removeSelectedButton = findViewById(R.id.button_remove_selected);
 
         homeButton.setOnClickListener(v -> {
             Intent intent = new Intent(StorageActivity.this, MainActivity.class);
