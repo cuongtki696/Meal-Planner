@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- ScrollView to make the layout scrollable if needed -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Input fields for ingredient details -->
+            <EditText
+                android:id="@+id/ingredient_name_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ingredient Name" />
+
+            <EditText
+                android:id="@+id/ingredient_quantity_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Quantity" />
+
+            <EditText
+                android:id="@+id/ingredient_unit_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Unit (e.g., kg, liters)" />
+
+            <EditText
+                android:id="@+id/ingredient_used_by_date_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Used By Date (YYYY-MM-DD)" />
+
+
+            <!-- ImageView to display the selected/taken image -->
+            <ImageView
+                android:id="@+id/ingredient_image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="16dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Button to add ingredient, fixed near the bottom of the screen -->
+    <Button
+        android:id="@+id/button_add_ingredient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Ingredient"
+        android:layout_gravity="bottom"
+        android:layout_margin="16dp" />
+
+</FrameLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Main container for the content -->
+    <LinearLayout
+        android:id="@+id/main_container_shopping"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <!-- Navigation Bar -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:background="#FF6200EE">
+
+            <!-- Home Button -->
+            <Button
+                android:id="@+id/button_home"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:textColor="#FFFFFF"
+                android:background="#FF3700B3" />
+
+            <!-- Storage Button -->
+            <Button
+                android:id="@+id/button_storage"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Storage"
+                android:textColor="#FFFFFF"
+                android:background="#FF3700B3" />
+
+            <!-- Shopping List Button -->
+            <Button
+                android:id="@+id/button_shopping_list"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Shopping List"
+                android:textColor="#FFFFFF"
+                android:background="#FF3700B3" />
+        </LinearLayout>
+
+        <!-- TextView for the "Shopping List Empty" message -->
+        <TextView
+            android:id="@+id/shopping_list_empty_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shopping List Empty"
+            android:textSize="18sp"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:padding="16dp" />
+
+        <!-- RecyclerView for displaying the shopping list items -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/shopping_list_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <!-- Small Update Button in the bottom-right corner -->
+    <Button
+        android:id="@+id/button_update_shopping"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:backgroundTint="#FF3700B3"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp" />
+
+    <!-- Remove Button at the bottom-left corner with fixed position -->
+    <Button
+        android:id="@+id/button_remove_shopping"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remove"
+        android:backgroundTint="#FF3700B3"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="bottom|start"
+        android:layout_margin="16dp" />
+
+</FrameLayout>
