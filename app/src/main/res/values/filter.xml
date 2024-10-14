@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Country">
+        <item>United States</item>
+        <item>China</item>
+        <item>Middle East</item>
+        <item>Italy</item>
+        <item>India</item>
+        <item>All</item>
+    </string-array>
+    <string-array name="Type">
+        <item>Low Fat</item>
+        <item>Vegan</item>
+        <item>Vegetarian</item>
+        <item>Protein Rich</item>
+        <item>Baby Food</item>
+        <item>All</item>
+    </string-array>
+    <string-array name="Allergy">
+        <item>Fish</item>
+        <item>Soy</item>
+        <item>Gluten</item>
+        <item>Dairy</item>
+        <item>None</item>
+        <item>All</item>
+    </string-array>
+    <string-array name="Nutrient">
+        <item>Vitamin A</item>
+        <item>Vitamin B</item>
+        <item>Vitamin C</item>
+        <item>Vitamin D</item>
+        <item>Iron</item>
+        <item>Calcium</item>
+        <item>Fiber</item>
+        <item>Omega-3</item>
+        <item>All</item>
+    </string-array>
+</resources>

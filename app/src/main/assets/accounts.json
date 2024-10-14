@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "username": "jerry",
+    "password": "123456",
+    "avatar": "file:///android_asset/avatars/avatar01.png"
+  },
+  {
+    "id": 2,
+    "username": "polly",
+    "password": "123456",
+    "avatar": "file:///android_asset/avatars/avatar02.png"
+  },
+  {
+    "id": 3,
+    "username": "karen",
+    "password": "123456",
+    "avatar": "file:///android_asset/avatars/avatar03.png"
+  },
+  {
+    "id": 4,
+    "username": "carey",
+    "password": "123456",
+    "avatar": "file:///android_asset/avatars/avatar04.png"
+  },
+  {
+    "id": 5,
+    "username": "eve",
+    "password": "123456",
+    "avatar": "file:///android_asset/avatars/avatar05.png"
+  }
+]

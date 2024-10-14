@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_margin="16dp"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="username" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginHorizontal="16dp" />
+
+    <TextView
+        android:id="@+id/tv_profile_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:drawableStart="@drawable/ic_person"
+        android:drawablePadding="16dp"
+        android:drawableTint="?attr/colorOnSurfaceVariant"
+        android:padding="16dp"
+        android:text="My Profile"
+        android:textSize="16sp" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginHorizontal="16dp" />
+
+    <TextView
+        android:id="@+id/tv_account_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:drawableStart="@drawable/ic_account_setting"
+        android:drawablePadding="16dp"
+        android:drawableTint="?attr/colorOnSurfaceVariant"
+        android:padding="16dp"
+        android:text="Account Setting"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_modify_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:drawableStart="@drawable/ic_account_setting"
+        android:drawablePadding="16dp"
+        android:drawableTint="?attr/colorOnSurfaceVariant"
+        android:padding="16dp"
+        android:text="Modify Password"
+        android:textSize="16sp" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginHorizontal="16dp" />
+
+    <TextView
+        android:id="@+id/tv_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:drawableStart="@drawable/ic_history"
+        android:drawablePadding="16dp"
+        android:drawableTint="?attr/colorOnSurfaceVariant"
+        android:padding="16dp"
+        android:text="History"
+        android:textSize="16sp" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginHorizontal="16dp" />
+
+    <TextView
+        android:id="@+id/tv_food_basket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:drawableStart="@drawable/ic_shopping"
+        android:drawablePadding="16dp"
+        android:drawableTint="?attr/colorOnSurfaceVariant"
+        android:padding="16dp"
+        android:text="Food Basket"
+        android:textSize="16sp" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginHorizontal="16dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="@color/md_theme_error"
+        android:text="Logout" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">Meal Planner</string>
+    <string name="title_home">Home</string>
+    <string name="title_collect">Collect</string>
+    <string name="title_mine">Mine</string>
+    <string name="searchbar_hint">Input Something</string>
 </resources>
