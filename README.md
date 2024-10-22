@@ -26,7 +26,7 @@ _Team project using SCRUM methodlogies for COMP602 Software Development Practice
 
 --------------------------------------------------
 
-### Installation
+## Installation
 
 1.Clone the repository to your local machine.
 
@@ -40,7 +40,7 @@ _Team project using SCRUM methodlogies for COMP602 Software Development Practice
 
 -------------------------------------------------
 
-### Features
+## Features
 - __Account Signup:__ Create an account to save and manage your preferences.
 - __Storage Management:__ Keep a detailed inventory of ingredients, including name, quantity, unit, and expiration date.
 - __Search and Save:__  Search for recipes and save them for later use.
@@ -49,7 +49,7 @@ _Team project using SCRUM methodlogies for COMP602 Software Development Practice
 - __Meal Planner:__ Suggest meals based on the items available in your storage, dietary restrictions and dish type.
 
 --------------------------------------------------
-### Technologies Used
+## Technologies Used
 
 Java: Main programming language for the app.
 
