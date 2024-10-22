@@ -15,8 +15,8 @@ _Team project using SCRUM methodlogies for COMP602 Software Development Practice
 - [Contribution][c.5]
 - [Team][c.6]
 - [LICIENCE][c.7]
+  
 [c.1]: <[https://github.com/cuongtki696/Meal-Planner/tree/meal-planner]>
-
 [c.2]: <[https://github.com/cuongtki696/Meal-Planner/tree/meal-planner?tab=readme-ov-file#installation]>
 [c.3]: <[https://github.com/cuongtki696/Meal-Planner/tree/meal-planner?tab=readme-ov-file#features]>
 [c.4]: <[https://github.com/cuongtki696/Meal-Planner/tree/meal-planner?tab=readme-ov-file#technologies-used]>
