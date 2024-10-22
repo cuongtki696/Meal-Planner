@@ -14,6 +14,7 @@ import com.bumptech.glide.Glide;
 import meal.cuongtki696.org.databinding.FragmentMineBinding;
 import meal.cuongtki696.org.ui.search.search.HistoryActivity;
 import meal.cuongtki696.org.ui.shopping.ShoppingListActivity;
+import meal.cuongtki696.org.ui.storage.StorageListActivity;
 import meal.cuongtki696.org.utils.AccountHelper;
 
 public class MineFragment extends Fragment {
@@ -37,6 +38,9 @@ public class MineFragment extends Fragment {
         });
         binding.tvFoodBasket.setOnClickListener(v -> {
             ShoppingListActivity.launch(requireContext());
+        });
+        binding.tvStorageList.setOnClickListener(v -> {
+            StorageListActivity.launch(requireContext());  // Launch StorageListActivity
         });
         binding.btnLogout.setOnClickListener(v -> {
             AccountHelper.saveActiveAccount(null);

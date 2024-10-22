@@ -30,6 +30,8 @@
         <activity android:name=".ui.search.search.HistoryActivity" />
         <activity android:name=".ui.shopping.ShoppingListActivity" />
         <activity android:name=".ui.shopping.ShoppingAddActivity" />
+        <activity android:name=".ui.storage.StorageListActivity" />
+        <activity android:name=".ui.storage.StorageAddActivity" />
         <activity android:name=".ui.mine.RegisterActivity" />
         <activity android:name=".ui.mine.ModifyActivity" />
     </application>

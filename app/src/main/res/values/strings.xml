@@ -3,5 +3,9 @@
     <string name="title_home">Home</string>
     <string name="title_collect">Collect</string>
     <string name="title_mine">Mine</string>
-    <string name="searchbar_hint">Input Something</string>
+    <string name="searchbar_hint">Search</string>
+    <string name="storage_title">Storage</string>
+    <string name="update">Update</string>
+    <string name="remove">Remove</string>
+    <string name="storage_list_empty">Storage List Empty</string>
 </resources>

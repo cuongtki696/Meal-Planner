@@ -13,6 +13,7 @@ public class AccountHelper {
     private static String KEY_HISTORY = "history";
     private static String KEY_COLLECT = "collect";
     private static String KEY_SHOPPING = "shopping";
+    private static String KEY_STORAGE = "storage";
 
     public static boolean saveActiveAccount(String account) {
         return mmkv.encode(KEY_ACCOUNT_ACTIVE, account);
@@ -74,5 +75,30 @@ public class AccountHelper {
 
     public static Set<String> getShopping() {
         return mmkv.decodeStringSet(getActiveAccount() + ":" + KEY_SHOPPING, new HashSet<>());
+    }
+    public static boolean addStorageItem(String item, String expirationDate) {
+        Set<String> items = getStorage();
+        items.add(item + ":" + expirationDate);
+        return mmkv.encode(getActiveAccount() + ":" + KEY_STORAGE, items);
+    }
+
+    public static boolean removeStorage(String item) {
+        Set<String> storageSet = mmkv.decodeStringSet(getActiveAccount() + ":storage", new HashSet<>());
+        boolean removed = storageSet.remove(item);
+        return mmkv.encode(getActiveAccount() + ":storage", storageSet) && removed;
+    }
+
+    public static Set<String> getStorage() {
+        return mmkv.decodeStringSet(getActiveAccount() + ":" + KEY_STORAGE, new HashSet<>());
+    }
+
+    public static String getStorageItemDetails(String item) {
+        Set<String> items = getStorage();
+        for (String i : items) {
+            if (i.startsWith(item + ":")) {
+                return i;
+            }
+        }
+        return null;
     }
 }
