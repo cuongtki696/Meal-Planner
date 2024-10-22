@@ -9,42 +9,20 @@ _Team project using SCRUM methodlogies for COMP602 Software Development Practice
 
 ## Contents
 - [About][c.1]
-- [Getting Started][c.2]
-    - [Required][c.2.1]
-    - [Required accounts][c.2.2]
-    - [API keys][c.2.3]
-    - [Firestore Database][c.2.4]
-    - [Firestore Storage][c.2.5]
-    - [Scraping Data][c.2.6]
-- [Usage][c.3]
-    - [Installation][c.3.1]
-    - [Development Server][c.3.2]
-    - [Production Server][c.3.3]
-    - [Tests][c.3.4]
-    - [Access][c.3.5]
-- [Contributing][c.4]
-    - [VSCode Setup][c.4.1]
-- [Team][c.5]
-- [License][c.6]
+- [Installation][c.2]
+- [Feature][c.3]
+- [Techonoly Used][c.4]
+- [Contribution][c.5]
+- [Team][c.6]
+- [LICIENCE][c.7]
+[c.1]: <[https://github.com/cuongtki696/Meal-Planner/tree/meal-planner]>
 
-[c.1]: <https://github.com/coriandar/brokebites#brokebites>
-[c.2]: <https://github.com/coriandar/brokebites#getting-started>
-[c.2.1]: <https://github.com/coriandar/brokebites#required>
-[c.2.2]: <https://github.com/coriandar/brokebites#required-accounts>
-[c.2.3]: <https://github.com/coriandar/brokebites#api-keys>
-[c.2.4]: <https://github.com/coriandar/brokebites#firestore-database>
-[c.2.5]: <https://github.com/coriandar/brokebites#firestore-storage>
-[c.2.6]: <https://github.com/coriandar/brokebites#scraping-restaurant-data>
-[c.3]: <https://github.com/coriandar/brokebites#usage>
-[c.3.1]: <https://github.com/coriandar/brokebites#installation>
-[c.3.2]: <https://github.com/coriandar/brokebites#run-devevlopment-server>
-[c.3.3]: <https://github.com/coriandar/brokebites#run-production-server>
-[c.3.4]: <https://github.com/coriandar/brokebites#run-tests>
-[c.3.5]: <https://github.com/coriandar/brokebites#access>
-[c.4]: <https://github.com/coriandar/brokebites#contributing-current-devs-only>
-[c.4.1]: <https://github.com/coriandar/brokebites#vscode-setup>
-[c.5]: <https://github.com/coriandar/brokebites#team>
-[c.6]: <https://github.com/coriandar/brokebites#license>
+[c.2]: <[https://github.com/cuongtki696/Meal-Planner/tree/meal-planner?tab=readme-ov-file#installation]>
+[c.3]: <[https://github.com/cuongtki696/Meal-Planner/tree/meal-planner?tab=readme-ov-file#features]>
+[c.4]: <[https://github.com/cuongtki696/Meal-Planner/tree/meal-planner?tab=readme-ov-file#technologies-used]>
+[c.5]: <[https://github.com/cuongtki696/Meal-Planner/tree/meal-planner?tab=readme-ov-file#contributing-current-devs-only]>
+[c.6]: <[https://github.com/cuongtki696/Meal-Planner/tree/meal-planner?tab=readme-ov-file#team]>
+[c.7]: <[https://github.com/cuongtki696/Meal-Planner/tree/meal-planner?tab=readme-ov-file#license]>
 
 --------------------------------------------------
 
@@ -79,7 +57,7 @@ Android SDK: For building Android applications.
 
 ---------------------------------------------------
 
-## Contributing (Current devs only)
+## Contrion (Current devs only)
 - Pull requests are required.
 - Please make sure to follow code formatting.
 - Please make sure to update tests as appropriate.
